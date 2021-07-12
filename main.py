@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello():
     return render_template('base.html')
 
-@app.route('/detect',methods = ['POST'])
+@app.route('/define',methods = ['POST'])
 def predict():
     ip_word = request.form.get('ip-word')
     
